@@ -26,28 +26,16 @@ public class FindSecondLargest {
 		System.out.println("Original Array list:"+data);
 		System.out.println("second largest number is 7 from data Array");
 		// Output = 7
-		
 		Set<Integer> num = new TreeSet<Integer>();
-		
-		for (int i = 0; i < data.length; i++) {
-			
+		for (int i = 0; i < data.length; i++)
+		{
 			num.add(data[i]);
 		}
-		
 		List<Integer> list1 = new ArrayList<Integer>(num);
-		
 		Collections.sort(list1);
-
 		System.out.println("After sorting the Array:"+list1);
-		
 		System.out.println("Second largest number in array is : ");
-		
 		System.out.print(list1.get(1));
-		
-		
-		
-		
-		
 
 	}
 

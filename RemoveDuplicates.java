@@ -29,13 +29,18 @@ public class RemoveDuplicates {
 		for (int i = 0; i < ch.length; i++) {
 
 			boolean add = charSet.add(ch[i]);
-
-			if (!add) {
+			// Adding non duplicate to Set (dupCharSet)
+			if (!add)
+			{
 				dupCharSet.add(ch[i]);
 			}
 		}
 
+		System.out.println(dupCharSet); //[P,a]
+		System.out.println(charSet); //[P,a,y, , l]
+
 		charSet.removeAll(dupCharSet);
+		System.out.println(charSet); // [y,  , l]
 
 		Iterator<Character> iterVar = charSet.iterator();
 
@@ -43,7 +48,7 @@ public class RemoveDuplicates {
 			char chVar = iterVar.next();
 			if((chVar != ' '))
 			{
-				System.out.println(chVar);
+				System.out.print(chVar);
 			}
 			
 		}
