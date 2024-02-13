@@ -10,6 +10,7 @@ public class FindSecondLargest {
 
 	// Here is the input
 	int[] data = { 3, 2, 11, 4, 6, 7, 2, 3, 3, 6, 7 };
+	
 	// output= 7;
 
 	/*
@@ -23,12 +24,12 @@ public class FindSecondLargest {
 	public static void main(String[] args) {
 
 		int[] data = { 3, 2, 11, 4, 6, 7, 2, 3, 3, 6, 7 };
-
+		System.out.println("Data Array is to be sorted first");
 		// Output = 7
 		
 		Set<Integer> num = new TreeSet<Integer>();
 		
-		for (int i = 0; i < data.length; i++) {
+		for (int i = 0; i < data.length; i++) { 
 			
 			num.add(data[i]);
 		}
@@ -39,12 +40,7 @@ public class FindSecondLargest {
 		
 		System.out.println("List ");
 		
-		System.out.println(list1.get(1));
-		
-		
-		
-		
-		
+		System.out.println(list1.get(1));	
 
 	}
 
